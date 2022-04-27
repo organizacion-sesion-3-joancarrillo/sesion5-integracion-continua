@@ -16,11 +16,6 @@ class CalculatorTest extends TestCase
         $this->calculator = NULL;
     }
  
-    public function testAdd(): void
-    {
-        $result = $this->calculator->add(1, 2);
-        $this->assertEquals(3, $result);
-    }
 
     public function testMultiply(): void
     {
@@ -33,6 +28,7 @@ class CalculatorTest extends TestCase
         $result = $this->calculator->division(10, 2);
         $this->assertEquals(5, $result);
     }
+
     public function testAdd(): void
     {
         $result = $this->calculator->add(100, 200);
